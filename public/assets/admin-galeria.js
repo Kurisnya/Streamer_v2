@@ -1,7 +1,7 @@
 // admin-galeria.js
 // Gerencia galeria: carregar, enviar, excluir, substituir.
 
-const GALERIA_JSON = "/assets/data/galeria.json";
+const GALERIA_JSON = "/data/galeria.json";
 const ENDPOINT = "http://localhost:3000";
 
 let fotos = [];

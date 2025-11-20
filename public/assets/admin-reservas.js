@@ -3,7 +3,7 @@ let reservas = [];
 // Função para carregar reservas do JSON
 async function carregarReservas() {
     try {
-        const response = await fetch('/assets/reservas.json'); // caminho corrigido
+        const response = await fetch('/data/reservas.json'); // caminho corrigido
         if (!response.ok) throw new Error("Não foi possível carregar o arquivo JSON.");
         reservas = await response.json();
         atualizarTabela();

@@ -2,7 +2,7 @@
 // Gerencia galeria: carregar, enviar, excluir e substituir
 
 // O galeria.json continua no Vercel (somente leitura)
-const GALERIA_JSON = "/assets/data/galeria.json";
+const GALERIA_JSON = "/data/galeria.json";
 
 // API do Railway (leitura/escrita de imagens)
 const API = "https://trabalho-extensionista-fundamentos-production.up.railway.app";

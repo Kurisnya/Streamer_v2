@@ -159,7 +159,7 @@
 
     <script>
         function carregarCarrossel() {
-            return fetch("/assets/data/galeria.json")
+            return fetch("/data/galeria.json")
                 .then(r => r.json())
                 .then(data => {
                     let html = "";

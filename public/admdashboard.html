@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script>
+        const senha = "1234"; // Defina a senha desejada
+        const tentativa = prompt("Digite a senha do painel administrativo:");
+
+        if (tentativa !== senha) {
+            alert("Acesso negado!");
+            window.location.href = "/"; // Redireciona para página inicial
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Lounge Gourmet</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ÍCONES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- POPPINS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbarEdit navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" id="imgLogo" alt="Logo"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container py-4">
+        <h1>Painel Administrativo</h1>
+        <p style="color: white;">Gerencie todas as funções do Lounge Gourmet em um só lugar.</p>
+
+        <div class="row g-4 justify-content-center mt-4">
+
+            <!-- CARD RESERVAS -->
+            <div class="col-12 col-md-6 col-lg-6">
+                <a href="admreservas.html" class="text-decoration-none">
+                    <div class="card shadow-lg card-admin">
+                        <div class="card-body text-center py-4">
+                            <i class="bi bi-calendar-check admin-icon"></i>
+                            <h2 class="card-title">Reservas e Contratos</h2>
+                            <p class="paragrafoCard">Visualize, confirme e cancele reservas.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- CARD PREÇOS -->
+            <div class="col-12 col-md-6 col-lg-6">
+                <a href="admprecos.html" class="text-decoration-none">
+                    <div class="card shadow-lg card-admin">
+                        <div class="card-body text-center py-4">
+                            <i class="bi bi-cash-coin admin-icon"></i>
+                            <h2 class="card-title">Preços e Serviços</h2>
+                            <p class="paragrafoCard">Atualize valores e serviços adicionais.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- CARD GALERIA -->
+            <div class="col-12 col-md-6 col-lg-6">
+                <a href="admgaleria.html" class="text-decoration-none">
+                    <div class="card shadow-lg card-admin">
+                        <div class="card-body text-center py-4">
+                            <i class="bi bi-images admin-icon"></i>
+                            <h2 class="card-title">Gerenciar Galeria</h2>
+                            <p class="paragrafoCard">Envie, organize e remova fotos.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- CARD ARRECADAÇÃO MENSAL -->
+            <div class="col-12 col-md-6 col-lg-6">
+                <a href="admarrecadacao.html" class="text-decoration-none">
+                    <div class="card shadow-lg card-admin">
+                        <div class="card-body text-center py-4">
+                            <i class="bi bi-graph-up-arrow admin-icon"></i>
+                            <h2 class="card-title">Arrecadação Mensal</h2>
+                            <p class="paragrafoCard">Veja quanto o espaço faturou em cada mês.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER PADRÃO -->
+    <footer class="rodape">
+        <div class="copyright">
+            <p>© 2025 Lounge Gourmet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
